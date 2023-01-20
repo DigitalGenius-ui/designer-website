@@ -1,0 +1,58 @@
+.website{
+    border: 2px solid rgba(170, 170, 170, 0.339);
+    box-shadow: -6px 6px 6px -3px rgba(0, 0, 0, 0.75);
+        -webkit-box-shadow: -6px 6px 6px -3px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: -6px 6px 6px -3px rgba(0, 0, 0, 0.75);
+    border-radius: 10px;
+    color: #fff;
+    background-color: rgba(57, 57, 57, 0.337);
+    margin-bottom: 2rem;
+    overflow: hidden;
+}
+
+.website .banner{
+    display: flex;
+    align-items: center;
+    background: linear-gradient(rgba(26, 26, 37, 0.031), rgba(26, 26, 37));
+    padding-bottom: 6rem;
+}
+
+.banner .texts, .empty{
+    flex: 1;
+}
+
+.banner .empty{
+    flex: 1.8;
+}
+
+.texts {
+    text-align: center;
+    padding-bottom: 8rem;
+    padding: 5rem 3rem 3rem 3rem;
+}
+
+.texts h1{
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 3.3rem;
+    line-height: 2.7rem;
+    padding-bottom: 0.5rem;
+}
+
+.texts .tage{
+    font-family: 'Satisfy', cursive;
+    text-transform: capitalize;
+}
+
+.texts .desc{
+   text-align: justify;
+   padding: 1.5rem 0;
+}
+
+.texts button{
+    padding: 0.5rem 1.5rem;
+    background-color: rgb(223, 3, 3);
+    border: none;
+    cursor: pointer;
+    color: #fff;
+}

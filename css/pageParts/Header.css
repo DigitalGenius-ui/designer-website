@@ -1,0 +1,43 @@
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header a{
+    color: #fff;
+}
+
+.header nav{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+nav span a{
+    display: inline-block;
+    padding: 1.2rem 0.5rem;
+}
+
+nav span:hover{
+    background-color: rgb(223, 3, 3);
+}
+
+nav span.active{
+    background-color: rgb(223, 3, 3);
+}
+
+.header .icons{
+    display: flex;
+    align-items: center;
+}
+
+.header .icons span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    background-color: rgba(102, 102, 102, 0.7);
+    border-radius: 50px;
+}
