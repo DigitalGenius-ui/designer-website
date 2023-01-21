@@ -3,7 +3,6 @@ footer {
     margin-top: -15rem;
     position: relative;
     padding-top: 13rem;
-    padding-bottom: 3rem;
 }
 
 /* circle part */
@@ -67,6 +66,16 @@ input, textarea{
 .message textarea{
     resize: none;
     height: 100%;
+}
+
+.copyright{
+    color: #fff;
+    text-align: center;
+    margin-top: 2rem;
+    padding: 1.5rem 0;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.8rem;
+    font-weight: 300;
 }
 
 @media(max-width : 528px) {
