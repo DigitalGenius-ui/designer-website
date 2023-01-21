@@ -89,4 +89,8 @@ input, textarea{
         flex-direction: column;
         gap: 1.2rem;
     }
+
+        footer .flex {
+            height: 100%;
+        }
 }
