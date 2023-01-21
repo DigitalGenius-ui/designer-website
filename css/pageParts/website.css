@@ -1,13 +1,14 @@
 .website{
-    border: 2px solid rgba(170, 170, 170, 0.339);
+    border: 2px solid rgba(128, 128, 128, 0.731);
     box-shadow: -6px 6px 6px -3px rgba(0, 0, 0, 0.75);
         -webkit-box-shadow: -6px 6px 6px -3px rgba(0, 0, 0, 0.75);
         -moz-box-shadow: -6px 6px 6px -3px rgba(0, 0, 0, 0.75);
-    border-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
     color: #fff;
-    background-color: rgba(57, 57, 57, 0.337);
     margin-bottom: 2rem;
     overflow: hidden;
+    z-index: 10000;
 }
 
 .website .banner{
@@ -27,7 +28,6 @@
 
 .texts {
     text-align: center;
-    padding-bottom: 8rem;
     padding: 5rem 3rem 3rem 3rem;
 }
 
@@ -46,13 +46,19 @@
 
 .texts .desc{
    text-align: justify;
-   padding: 1.5rem 0;
+   padding-top: 1.5rem;
 }
 
-.texts button{
-    padding: 0.5rem 1.5rem;
-    background-color: rgb(223, 3, 3);
-    border: none;
-    cursor: pointer;
-    color: #fff;
+.texts .desc::first-letter{
+    font-size: 1.6rem;
+}
+
+@media(max-width : 500px) {
+    .website .banner {
+        flex-direction: column;
+    }
+
+    .texts {
+        padding: 5rem 1rem 3rem 1rem;
+    }
 }

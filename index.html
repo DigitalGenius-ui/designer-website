@@ -17,17 +17,19 @@
     <title>Designer Website</title>
   </head>
   <body>
-    <div class="container">
-      <!-- contents part  -->
-      <div class="contents">
-        <!-- header part  -->
-        <header class="header">
-          <nav>
+    <div class="container"></div>
+    <!-- contents part  -->
+    <div class="contents">
+      <!-- header part  -->
+      <header class="header">
+        <nav>
+          <span class="close"><i class="fa-solid fa-square-xmark"></i></span>
+          <div class="links">
             <span class="active"><a href="#">Home</a></span>
             <span><a href="#">Portfolio</a></span>
             <span><a href="#">Services</a></span>
             <span><a href="#">Contact Us</a></span>
-          </nav>
+          </div>
           <!-- social icons  -->
           <div class="icons">
             <span
@@ -43,37 +45,158 @@
               ><a href="#"><i class="fa-solid fa-phone"></i></a
             ></span>
           </div>
-        </header>
-        <h1 class="title">Fashion</h1>
+        </nav>
+        <div class="bar">
+          <span><i class="fa-solid fa-bars"></i></span>
+        </div>
+      </header>
+      <h1 class="title">Fashion</h1>
 
-        <!-- website page  -->
-        <section class="website">
-          <!-- banner part  -->
-          <div class="banner">
-            <div class="texts">
-              <h1>
-                I am <br />
-                designer
-              </h1>
-              <p class="tage">my demand id your satisfaction</p>
-              <p class="desc">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis
-                cupiditate facere esse quaerat eius nostrum. Quia deleniti vel
-                quasi at mollitia fuga facere asperiores, quibusdam possimus
-                delectus et sit totam!
-              </p>
-              <button>Read More</button>
+      <!-- website page  -->
+      <section class="website">
+        <!-- banner part  -->
+        <div class="banner">
+          <div class="texts">
+            <h1>
+              I am <br />
+              designer
+            </h1>
+            <p class="tage">my demand is your satisfaction</p>
+            <p class="desc">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis
+              cupiditate facere esse quaerat eius nostrum. Quia deleniti vel
+              quasi at mollitia fuga facere asperiores, quibusdam possimus
+              delectus et sit totam!
+            </p>
+            <button class="btn">Read More</button>
+          </div>
+          <div class="empty"></div>
+        </div>
+
+        <!-- team part  -->
+        <div class="team">
+          <div class="right">
+            <h1 class="head">
+              creative and <br />
+              professional
+            </h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam nisi
+              ea obcaecati quis dolorem autem. Porro quasi in ut doloribus?
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam nisi
+              ea obcaecati quis dolorem autem. Porro quasi in ut doloribus?
+            </p>
+            <br />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
+              dignissimos doloremque, reiciendis id dolorem rerum. Id placeat
+              maiores quod soluta.
+            </p>
+            <button class="btn">Read More</button>
+          </div>
+
+          <!-- left part  -->
+          <div class="left">
+            <h1 class="head">our team</h1>
+            <div class="team_members">
+              <div class="team_member">
+                <img src="./images/team/team1.jpg" alt="teamMember" />
+                <div class="text">
+                  <h1 class="name">Name Surname</h1>
+                  <p class="position">manager</p>
+                  <p class="detail">
+                    Lorem ipsum dolor sit amet consectetur adipisicing.
+                  </p>
+                </div>
+              </div>
+              <div class="team_member">
+                <img src="./images/team/team2.jpg" alt="teamMember" />
+                <div class="text">
+                  <h1 class="name">Name Surname</h1>
+                  <p class="position">developer</p>
+                  <p class="detail">
+                    Lorem ipsum dolor sit amet consectetur adipisicing.
+                  </p>
+                </div>
+              </div>
+              <div class="team_member">
+                <img src="./images/team/team3.jpg" alt="teamMember" />
+                <div class="text">
+                  <h1 class="name">Name Surname</h1>
+                  <p class="position">designer</p>
+                  <p class="detail">
+                    Lorem ipsum dolor sit amet consectetur adipisicing.
+                  </p>
+                </div>
+              </div>
             </div>
-            <div class="empty"></div>
           </div>
+        </div>
 
-          <!-- team part  -->
-          <div class="team">
-            <div class="right">left</div>
-            <div class="left">right</div>
+        <!-- works part  -->
+        <div class="projects">
+          <!-- circle span  -->
+          <span class="circle"></span>
+
+          <h1 class="project_title">selected work</h1>
+          <div class="project_btn">
+            <button>all</button>
+            <button>web design</button>
+            <button>logo design</button>
+            <button>branding</button>
           </div>
-        </section>
-      </div>
+          <!-- project sample  -->
+          <div class="projects_sample">
+            <div class="project">
+              <img src="./images/projects/project1.png" alt="project" />
+              <span><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+            </div>
+            <div class="project">
+              <img src="./images/projects/project2.jpg" alt="project" />
+              <span><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+            </div>
+            <div class="project">
+              <img src="./images/projects/project3.png" alt="project" />
+              <span><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+            </div>
+            <div class="project">
+              <img src="./images/projects/project4.png" alt="project" />
+              <span><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
+    <footer>
+      <!-- circle span  -->
+      <div class="circle"></div>
+      <h1>get in touch</h1>
+      <form>
+        <div class="flex">
+          <div class="inputs">
+            <input type="text" placeholder="NAME" />
+            <input type="email" placeholder="EMAIL" />
+          </div>
+          <div class="message">
+            <textarea placeholder="MESSAGE" id="" cols="30" rows="3"></textarea>
+          </div>
+        </div>
+        <button class="btn">submit</button>
+      </form>
+    </footer>
+
+    <script>
+      const bar = document.querySelector(".bar span");
+      const close = document.querySelector(".close");
+      const navMenu = document.querySelector("nav");
+
+      bar.addEventListener("click", () => {
+        navMenu.classList.add("active");
+      });
+
+      close.addEventListener("click", () => {
+        navMenu.classList.remove("active");
+      });
+    </script>
   </body>
 </html>
