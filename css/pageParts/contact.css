@@ -30,7 +30,6 @@ footer h1{
 footer form{
     width: 30rem;
     margin: 0 auto;
-    text-align: center;
 }
 
 footer .flex{
@@ -47,7 +46,7 @@ form .inputs{
     gap: 0.5rem;
 }
 
-form .message{
+form .messageBox{
     flex: 1;
     height: 100%;
 }
@@ -63,9 +62,14 @@ input, textarea{
     width: 100%;
 }
 
-.message textarea{
+.messageBox textarea{
     resize: none;
     height: 100%;
+}
+
+.form .form_btn{
+    text-align: center;
+    margin-top: 3rem;
 }
 
 .copyright{
@@ -76,6 +80,44 @@ input, textarea{
     color: rgba(255, 255, 255, 0.8);
     font-size: 0.8rem;
     font-weight: 300;
+}
+
+.inputError{
+    box-shadow: 0px 0px 1.5px 1px red;
+    border-radius: 4px;
+    background-color: rgba(185, 30, 30, 0.256);
+    animation: input 200ms alternate;
+}
+
+.inputError::placeholder{
+    color: red;
+}
+
+.inputSuccess{
+    box-shadow: 0px 0px 1.5px 1px green;
+    background-color: rgba(40, 218, 20, 0.139);
+}
+
+.inputSuccess::placeholder{
+    color: green;
+}
+
+@keyframes input {
+    0%{
+        transform: translateX(15px);
+    }
+    
+    50%{
+        transform: translateX(-15px);
+    }
+
+    75%{
+        transform: translateX(5px);
+    }
+
+    100%{
+        transform: translateX(0);
+    }
 }
 
 @media(max-width : 528px) {

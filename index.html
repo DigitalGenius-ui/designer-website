@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- AOS scroll animation  -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!-- font awesome link  -->
     <link
       rel="stylesheet"
@@ -14,6 +16,8 @@
     />
     <!-- css link  -->
     <link rel="stylesheet" href="./css/style.css" />
+    <!-- javascript link  -->
+    <script src="./javascript/script.js" defer></script>
     <title>Designer Website</title>
   </head>
   <body>
@@ -21,7 +25,7 @@
     <!-- contents part  -->
     <div class="contents">
       <!-- header part  -->
-      <header class="header">
+      <header class="header" data-aos="fade-down" data-aos-duration="500">
         <nav>
           <span class="close"><i class="fa-solid fa-square-xmark"></i></span>
           <div class="links">
@@ -50,32 +54,63 @@
           <span><i class="fa-solid fa-bars"></i></span>
         </div>
       </header>
-      <h1 class="title">Fashion</h1>
+      <h1
+        class="title"
+        data-aos="fade-zoom"
+        data-aos-duration="2000"
+        data-aos-delay="500"
+      >
+        Fashion
+      </h1>
 
       <!-- website page  -->
       <section class="website">
         <!-- banner part  -->
         <div class="banner">
           <div class="texts">
-            <h1>
+            <h1 data-aos="fade" data-aos-duration="2000" data-aos-delay="1000">
               I am <br />
               designer
             </h1>
-            <p class="tage">my demand is your satisfaction</p>
-            <p class="desc">
+            <p
+              class="tage"
+              data-aos="fade-right"
+              data-aos-duration="2000"
+              data-aos-delay="1100"
+            >
+              my demand is your satisfaction
+            </p>
+            <p
+              class="desc"
+              data-aos="fade-left"
+              data-aos-duration="2000"
+              data-aos-delay="1200"
+            >
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis
               cupiditate facere esse quaerat eius nostrum. Quia deleniti vel
               quasi at mollitia fuga facere asperiores, quibusdam possimus
               delectus et sit totam!
             </p>
-            <button class="btn">Read More</button>
+            <button
+              data-aos="fade-zoom"
+              data-aos-duration="2000"
+              data-aos-delay="1300"
+              class="btn"
+            >
+              Read More
+            </button>
           </div>
           <div class="empty"></div>
         </div>
 
         <!-- team part  -->
         <div class="team">
-          <div class="right">
+          <div
+            class="right"
+            data-aos="fade-right"
+            data-aos-duration="2000"
+            data-aos-delay="500"
+          >
             <h1 class="head">
               creative and <br />
               professional
@@ -96,7 +131,12 @@
           </div>
 
           <!-- left part  -->
-          <div class="left">
+          <div
+            class="left"
+            data-aos="fade-left"
+            data-aos-duration="2000"
+            data-aos-delay="500"
+          >
             <h1 class="head">our team</h1>
             <div class="team_members">
               <div class="team_member">
@@ -138,7 +178,14 @@
           <!-- circle span  -->
           <span class="circle"></span>
 
-          <h1 class="project_title">selected work</h1>
+          <h1
+            class="project_title"
+            data-aos="fade-zoom"
+            data-aos-duration="2000"
+            data-aos-delay="500"
+          >
+            selected work
+          </h1>
           <div class="project_btn">
             <button>all</button>
             <button>web design</button>
@@ -170,34 +217,48 @@
     <footer>
       <!-- circle span  -->
       <div class="circle"></div>
-      <h1>get in touch</h1>
-      <form>
+      <h1 data-aos="fade-zoom" data-aos-duration="2000" data-aos-delay="300">
+        get in touch
+      </h1>
+      <form class="form">
         <div class="flex">
-          <div class="inputs">
-            <input type="text" placeholder="NAME" />
-            <input type="email" placeholder="EMAIL" />
+          <div
+            class="inputs"
+            data-aos="fade-right"
+            data-aos-duration="2000"
+            data-aos-delay="500"
+          >
+            <input class="nameInput" type="text" placeholder="NAME" />
+            <input class="emailInput" type="email" placeholder="EMAIL" />
           </div>
-          <div class="message">
-            <textarea placeholder="MESSAGE" id="" cols="30" rows="3"></textarea>
+          <div
+            class="messageBox"
+            data-aos="fade-left"
+            data-aos-duration="2000"
+            data-aos-delay="500"
+          >
+            <textarea
+              class="messageInput"
+              placeholder="MESSAGE"
+              id=""
+              cols="30"
+              rows="3"
+            ></textarea>
           </div>
         </div>
-        <button class="btn">submit</button>
+        <div
+          class="form_btn"
+          data-aos="fade-zoom"
+          data-aos-duration="2000"
+          data-aos-delay="600"
+        >
+          <button class="btn">submit</button>
+        </div>
       </form>
       <p class="copyright">&copy; Designed and Developed by Milad Tech 2023</p>
     </footer>
 
-    <script>
-      const bar = document.querySelector(".bar span");
-      const close = document.querySelector(".close");
-      const navMenu = document.querySelector("nav");
-
-      bar.addEventListener("click", () => {
-        navMenu.classList.add("active");
-      });
-
-      close.addEventListener("click", () => {
-        navMenu.classList.remove("active");
-      });
-    </script>
+    <!-- text animation  -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </body>
 </html>
